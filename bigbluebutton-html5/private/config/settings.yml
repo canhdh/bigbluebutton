@@ -7,8 +7,8 @@ public:
     listenOnlyMode: true
     forceListenOnly: false
     skipCheck: false
-    clientTitle: BigBlueButton
-    appName: BigBlueButton HTML5 Client
+    clientTitle: School On Air
+    appName: School On Air HTML5 Client
     bbbServerVersion: 2.2
     copyright: "©2020 BigBlueButton Inc."
     html5ClientBuild: HTML5_CLIENT_VERSION
@@ -32,10 +32,10 @@ public:
     defaultSettings:
       application:
         animations: true
-        chatAudioAlerts: false
-        chatPushAlerts: false
-        userJoinAudioAlerts: false
-        userJoinPushAlerts: false
+        chatAudioAlerts: true
+        chatPushAlerts: true
+        userJoinAudioAlerts: true
+        userJoinPushAlerts: true
         fallbackLocale: en
         overrideLocale: null
       audio:
@@ -223,7 +223,7 @@ public:
     toggleSelfVoice: false
   poll:
     enabled: true
-    max_custom: 5
+    max_custom: 10
   captions:
     enabled: true
     enableDictation: false
@@ -255,7 +255,7 @@ public:
     typingIndicator:
       enabled: true
   note:
-    enabled: false
+    enabled: true
     url: ETHERPAD_HOST
     config:
       showLineNumbers: false
@@ -278,7 +278,7 @@ public:
     relayOnlyOnReconnect: false
     listenOnlyCallTimeout: 15000
   presentation:
-    defaultPresentationFile: default.pdf
+    defaultPresentationFile: defaultSlide.pdf
     panZoomThrottle: 32
     restoreOnUpdate: false
     uploadEndpoint: "/bigbluebutton/presentation/upload"
